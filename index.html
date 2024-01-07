@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo"><a href="index.html"><img src="logo.png" alt=""></a></div>
+        <div class="location">
+            <h4 class="locationtop">Deliver to</h4>
+            <div class="locationbottom">
+                <img src="images/location.png"  alt="">
+                <h3>Peja</h3>
+            </div>
+        </div>
+        <input type="text" class="hinput" placeholder="Search for anything">
+        <div class="dropdown">
+            <span><img src="images/united-kingdom.png" class="flag" alt=""> Eng</span>
+            <div class="dropdown-content">
+            <p><img src="images/flag.png" class="flag" alt=""> Albanian</p>
+            <p><img src="images/german.png" class="flag" alt=""> German</p>
+            <p><img src="images/france.png" class="flag" alt=""> French</p>
+            <p><img src="images/italy.png" class="flag" alt=""> Italian</p>
+            </div>
+          </div>
+        <div class="sign">
+            <a href="signin.html">Sign in</a>
+            <a href="signup.html">Sign up</a>
+        </div>
+        <img src="images/shopping-cart.png" alt=""  class="cart">
+        
+
+
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="deals.html">Deals</a></li>
+            <li><a href="homefavourites.html">Home Favourites</a></li>
+            <li><a href="fashion.html">Fashion Finds</a></li>
+            <li><a href="electronics.html">Electronics</a></li>
+          </ul>
+    </div>
+    <div class="slideshow">
+        <div class="slideshow-container">
+
+            <!-- <div class="mySlides fade">
+              <img src="images/l.jpg" style="width:100%; height: 600px;">
+            </div> -->
+            
+              <div class="mySlides fade">
+                <img src="images/n.jpg" style="width:100%; height: 700px;">
+              </div>
+            <div class="mySlides fade">
+                <img src="images/g.jpg" style="width:100%; height: 900px;">
+              </div>
+            <div class="mySlides fade">
+              <img src="images/h.jpg" style="width:100%; height: 800px;">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="images/b.jpg" style="width:100%; height: 800px;">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+    </div>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+    <div class="top">
+        <div class="part">
+            <div class="tittle">Deals</div>
+            <div class="imgg">
+                <img src="images/x.jpg" alt="" class="first">
+                <img src="images/y.jpg" alt="" class="first">
+            </div>
+            <a href="deals.html" class="sm">See more</a>
+        </div>
+        <div class="part">
+            <div class="tittle">Refresh your space</div>
+            <div class="imgg">
+                <img src="images/homespace.jpg" alt="" class="middleimg e">
+                
+            </div>
+            <a href="#" class="sm">See more</a>
+        </div>
+        <div class="part">
+            <div class="tittle">The fashion you like</div>
+            <div class="imgg">
+                <img src="images/fashion.jpg" alt="" class="middleimg e">
+                
+            </div>
+            <a href="#" class="sm">See more</a>
+        </div>
+        <div class="part">
+            <div class="tittle">Electronics</div>
+            <div class="imgg">
+                <img src="images/charger.webp" alt="" class="e">
+                <img src="images/headphones.webp" alt="" class="e">
+                <img src="images/keyboard.jpg" alt="" class="e">
+                <img src="images/mouse.webp" alt="" class="e">
+            </div>
+            <a href="#" class="sm">See more</a>
+        </div>
+    </div>
+    <div class="books">
+        <div style="background-image: url(/images/1.webp);"></div>
+        <div style="background-image: url(/images/2.webp);"></div>
+        <div style="background-image: url(/images/3.webp);"></div>
+        <div style="background-image: url(/images/4.webp);"></div>
+        <div style="background-image: url(/images/5.webp);"></div>
+        <div style="background-image: url(/images/6.webp);"></div>
+        <div style="background-image: url(/images/7.webp);"></div>
+        <div style="background-image: url(/images/8.webp);"></div>
+        <div style="background-image: url(/images/9.webp);"></div>
+        <div style="background-image: url(/images/10.webp);"></div>
+        <div style="background-image: url(/images/11.webp);"></div>
+        <div style="background-image: url(/images/12.webp);"></div>
+    </div>
+    <div class="newf">
+        <div class="text">
+            <h2>NEW</h2>
+            <h4>Find your style</h4>
+            <a href="">Fashion</a>
+        </div>
+        <div class="product" style="background-image: url(images/wintercoat.jpg);">
+            <h3>Winter Coat</h3>
+            <h5>$50.99</h5>
+        </div>
+        <div class="product" style="background-image: url(images/tracksuit.jpg);">
+            <h3>Tracksuit</h3>
+            <h5>$30.99</h5>
+        </div>
+        <div class="product" style="background-image: url(images/jeans.jpg);">
+            <h3>Streetwear Jeans</h3>
+            <h5>$20.99</h5>
+        </div>
+        <div class="product" style="background-image: url(images/blazer.jpg);">
+            <h3>Oversizet Blazer</h3>
+            <h5>$25.99</h5>
+        </div>
+        <div class="product" style="background-image: url(images/suit.jpg);">
+            <h3>Suit</h3>
+            <h5>$70.99</h5>
+        </div>
+        <div class="product" style="background-image: url(images/tshirt.jpg);">
+            <h3>Oversizet Tshirt</h3>
+            <h5>$15.99</h5>
+        </div>
+        <div class="lastf">
+            <h1>Shop from creative <br> sellers!</h1>
+        </div>
+    </div>
+    <div class="shops">
+        <div class="textt">
+            <p>Local finds?</p>
+            <h1>Discover shops in Peja</h1>
+            <a href="">Go shopping</a>
+        </div>
+        <div class="acc">
+            <div class="acctop" style="background-image: url(images/q.jpg);">
+            </div>
+            <div class="accbottom">
+                <img src="images/profile1.jpg" alt="" class="profile">
+                <p>SheMakesHomemadeJewelry</p>
+            </div>
+        </div>
+        <div class="acc">
+            <div class="acctop" style="background-image: url(images/w.jpg);">
+            </div>
+            <div class="accbottom">
+                <img src="images/profile2.jpg" alt="">
+                <p>NewEra</p>
+            </div>
+        </div>
+        <div class="acc" >
+            <div class="acctop" style="background-image: url(images/download.jpg);">
+            </div>
+            <div class="accbottom">
+                <img src="images/profile3.jpg" alt="">
+                <p>OptimaShop</p>
+            </div>
+        </div>
+    </div>
+    <div class="about">
+        <h1>What is MarketMingle?</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente impedit rerum fugit ab. Dicta enim consequuntur sed eligendi sint tempora. Cupiditate suscipit atque hic esse cum ut veniam sint quasi?
+        Quae illo illum deleniti autem laborum vero blanditiis ab itaque libero quia a architecto officiis repellat commodi vel reiciendis, ipsum natus. Explicabo vel veniam natus, doloribus recusandae aliquam consequuntur in!
+        Quod quam reprehenderit in recusandae enim aspernatur commodi dolore, porro est modi excepturi ut laborum, totam, deserunt asperiores accusantium distinctio! Iusto enim eius quasi magnam quia repellendus tempore nisi pariatur. <br>
+        <br>
+
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt vero necessitatibus error fugiat optio! Id labore corporis esse eos cumque quas excepturi, cupiditate omnis, laborum harum itaque minus fugit debitis.
+        Rem debitis quo provident quos eos aperiam, beatae, quisquam ipsa aspernatur aut, tempore rerum? Quam nesciunt esse culpa autem, repellat eum accusamus sunt aperiam temporibus repudiandae, ipsam quia deleniti explicabo?
+        Dolorum est dolorem voluptatum saepe officia praesentium, dolor, quisquam similique reiciendis totam corrupti fugiat et incidunt accusamus eius aperiam omnis libero facere! Consectetur, vel. Ad harum error eveniet ratione necessitatibus?
+        Quibusdam esse dignissimos laborum at, incidunt quis itaque quisquam minima harum in fugiat neque dolorem perspiciatis architecto blanditiis iure sapiente similique adipisci ullam ipsum repellendus. Labore dolor molestias doloremque suscipit?
+        Numquam, temporibus laudantium rem aspernatur exercitationem asperiores molestiae at voluptates eum, enim voluptatem rerum incidunt repellendus ratione provident ullam ea totam ipsa illo magni? Officia libero minima iusto eveniet dolorum. 
+        <br>
+        <br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, optio perspiciatis! Fugiat necessitatibus cum voluptas quos cupiditate iste dolorum porro, excepturi laudantium animi facere asperiores laboriosam similique officiis. Veritatis, possimus.
+        Aspernatur a ex nihil nam nobis voluptatem qui doloremque distinctio. Omnis similique aliquam officia nisi error dicta qui numquam iure, alias, cum, autem totam quidem accusamus rerum accusantium earum nam?</p>
+        <h3>Wana join us?</h3>
+        <a href="">Register</a>
+
+    </div>
+    <div class="footer">
+        <p class="pleft">Copyright © 2023</p>
+        <div class="fright">
+            <a href="#" class="policy">Privacy Policy</a>
+            <a href="#" class="terms">Terms of Use</a>
+        </div>
+    </div>
+    
+</body>
+</html>
